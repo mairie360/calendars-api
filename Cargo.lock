@@ -291,16 +291,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "boilerplate-api"
-version = "0.1.0"
-dependencies = [
- "actix-web",
- "diesel",
- "r2d2",
- "r2d2_redis",
-]
-
-[[package]]
 name = "brotli"
 version = "6.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -340,6 +330,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e465647ae23b2823b0753f50decb2d5a86d2bb2cac04788fafd1f80e45378e5f"
 dependencies = [
  "bytes",
+]
+
+[[package]]
+name = "calendars-api"
+version = "0.1.0"
+dependencies = [
+ "actix-web",
+ "diesel",
+ "r2d2",
+ "r2d2_redis",
 ]
 
 [[package]]
