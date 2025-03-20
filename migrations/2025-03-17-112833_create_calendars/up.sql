@@ -4,8 +4,8 @@ CREATE TABLE
         id SERIAL PRIMARY KEY,
         name VARCHAR(64) UNIQUE NOT NULL,
         description VARCHAR(256) NOT NULL,
-        created_at TIMESTAMP NOT NULL DEFAULT NOW(),
-        updated_at TIMESTAMP NOT NULL DEFAULT NOW()
+        created_at TIMESTAMP NOT NULL DEFAULT NOW (),
+        updated_at TIMESTAMP NOT NULL DEFAULT NOW ()
     );
 
 -- CREATE TABLE
@@ -19,7 +19,6 @@ CREATE TABLE
 --         created_at TIMESTAMP NOT NULL DEFAULT NOW(),
 --         updated_at TIMESTAMP NOT NULL DEFAULT NOW()
 --     );
-
 -- CREATE TABLE
 --     users (
 --         id SERIAL PRIMARY KEY,
@@ -30,14 +29,12 @@ CREATE TABLE
 --         job VARCHAR(64),
 --         status VARCHAR(64),
 --     );
-
 -- CREATE TABLE
 --     user_calendars (
 --         user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
 --         calendar_id INTEGER REFERENCES calendars(id) ON DELETE CASCADE,
 --         PRIMARY KEY (user_id, calendar_id)
 --     );
-
 -- CREATE TABLE
 --     user_event (
 --         event_id INTEGER REFERENCES events(id) ON DELETE CASCADE,
